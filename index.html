@@ -61,9 +61,9 @@ h1 em{display:block;font-weight:500;font-style:italic}
 .btn:hover{background:var(--gold);color:#000}
 .btn.solid{background:var(--gold);color:#000}
 .btn.solid:hover{background:transparent;color:var(--gold)}
-.frame{position:relative;aspect-ratio:4/5;max-width:24rem;margin-left:auto;width:100%;background:#0d0c0a;display:grid;place-items:center;font:italic 500 5rem var(--display);color:var(--line)}
-.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%;filter:contrast(1.06) saturate(.92) sepia(.08)}
-.frame::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 40%,transparent 58%,rgba(0,0,0,.42) 100%),linear-gradient(transparent 72%,rgba(0,0,0,.3))}
+.frame{position:relative;aspect-ratio:4/5;max-width:28rem;margin-left:auto;width:100%;background:transparent;display:grid;place-items:end center;font:italic 500 5rem var(--display);color:var(--line);overflow:visible}
+.frame img{position:absolute;inset:-6% -12% -2%;width:124%;height:108%;object-fit:contain;object-position:center bottom;filter:contrast(1.04) saturate(.96)}
+.frame::after{content:"";position:absolute;z-index:-2;left:8%;right:8%;bottom:-2%;height:8%;border-radius:50%;background:radial-gradient(ellipse,rgba(196,163,95,.22),transparent 68%)}
 .frame::before{content:"";position:absolute;inset:-.7rem;pointer-events:none;
   background:linear-gradient(var(--gold),var(--gold)) 0 0/1.6rem 2px,linear-gradient(var(--gold),var(--gold)) 0 0/2px 1.6rem,
   linear-gradient(var(--gold),var(--gold)) 100% 0/1.6rem 2px,linear-gradient(var(--gold),var(--gold)) 100% 0/2px 1.6rem,
@@ -327,7 +327,8 @@ html.lock,html.lock body{overflow:hidden}
   // Photo: put photo.jpg next to index.html; initials show until then.
   var ph = document.getElementById("ph"), img = new Image();
   img.onload = function () { ph.replaceWith(img); };
-  img.alt = ""; img.src = "photo.jpg";
+  img.alt = "Portrait of Jaynier V. Gonzaga";
+  img.src = "photo-cutout.png";
 
   // Active nav link
   var links = [].slice.call(document.querySelectorAll("nav a"));
