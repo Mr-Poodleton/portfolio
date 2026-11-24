@@ -2,7 +2,7 @@
 
 A single-page personal portfolio with a James Bond theme: a gun-barrel opening, a 3D tunnel background, a scroll-driven title sequence, and widescreen project scenes. It is plain HTML, CSS, and JavaScript with no build step, so it deploys to Vercel as a static site.
 
-- **Live site:** (add the Vercel link here after deploying)
+- **Live site:** https://portfolio-xi-plum-65.vercel.app
 - **GitHub:** https://github.com/Mr-Poodleton
 - **LinkedIn:** https://www.linkedin.com/in/jaynier-gonzaga
 - **Email:** gonzagajaynier2004@gmail.com
